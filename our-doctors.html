@@ -14,7 +14,7 @@
     />
 
     <!-- Main Page Title -->
-    <title>contact</title>
+    <title>our doctors</title>
     <!-- Google Font -->
     <link
       rel="stylesheet"
@@ -122,158 +122,90 @@
     <!--===============================================================
                    Start  contact me
   =====================================================================-->
-
-    <section class="contact-me" id="contact">
-      <div class="overlay-contact padtobo-100">
-        <!-- Container -->
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-name">
-                <!--section-title-->
-                <h2>
-                  <span class="section-title"
-                    ><span class="first-title">Contact </span>Me</span
-                  >
-                </h2>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="single-contact">
-                <div class="contact-label">
-                  <!--contact-data-->
-                  <div class="contact-detail">
-                    <span class="fa fa-map-marked-alt"></span>
-                    <div class="contact-data">
-                      <h5>Address</h5>
-                      <p>661 Lefferts, NY 11203, USA</p>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-phone"></span>
-                    <div class="contact-data">
-                      <h5>Phone</h5>
-                      <p>(+1) 517 397 7100</p>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-envelope"></span>
-                    <div class="contact-data">
-                      <h5>Email</h5>
-                      <p>info@example.com</p>
-                    </div>
-                    <span class="number-big">
-                      <i class="far fa-address-book"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8">
-              <div
-                class="alert alert-success alert-dismissible"
-                id="sendmessage"
-                style="display: none"
-              >
-                <div>
-                  Thank you for your message. I will <br />
-                  get back to you as soon as possible.
-                </div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div
-                class="alert alert-danger alert-dismissible"
-                id="errormessage"
-                style="display: none"
-              >
-                <div>There is a problem in sending mail. Try again.</div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-
-              <div id="sendmail_ajaxLoading"></div>
-              <form
-                id="contact-form"
-                class="contact-info contact-form"
-                action="contact_form.php"
-                method="post"
-              >
-                <!--contact-form-->
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="name"
-                        required=""
-                        type="text"
-                        class="name"
-                        placeholder=" Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="email"
-                        required=""
-                        type="email"
-                        class="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item">
-                      <input
-                        name="subject"
-                        required=""
-                        type="text"
-                        class="name error"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item text-msg">
-                      <textarea
-                        name="message"
-                        required=""
-                        rows="1"
-                        class="message"
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-
-                    <button type="submit" class="button-effect">
-                    <a> </a>
-                      Message Me
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
+  <section class="our-doctors" id="our-doctors">
+    <div class="container-xxl padtobo-100"">
+      <div class="container">
+          <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+              <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
+              <h1>Our Experience Doctors</h1>
           </div>
-        </div>
-        <!-- Container -->
+          <div class="row g-4">
+              <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                  <div class="team-item position-relative rounded overflow-hidden">
+                      <div class="overflow-hidden">
+                          <img src="assets/images/team1.jpg" alt="">
+                      </div>
+                      <div class="team-text bg-light text-center p-4">
+                          <h5>Dr. Yasir Alayed
+                            <a></a>
+                          </h5>
+                          <p class="doctor-role">dental doctor</p>
+                          <div class="team-social text-center">
+                              <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                  <div class="team-item position-relative rounded overflow-hidden">
+                      <div class="overflow-hidden">
+                        <img src="assets/images/team1.jpg" alt="">
+                      </div>
+                      <div class="team-text bg-light text-center p-4">
+                          <h5>Dr. Hossam Alassaf
+                          </h5>
+                          <p class="doctor-role">surgery expert</p>
+                          <div class="team-social text-center">
+                              <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                  <div class="team-item position-relative rounded overflow-hidden">
+                      <div class="overflow-hidden">
+                        <img src="assets/images/team1.jpg" alt="">
+                      </div>
+                      <div class="team-text bg-light text-center p-4">
+                          <h5>Dr. Saif Aljabab
+                          </h5>
+                          <p class="doctor-role">cancer consultant</p>
+                          <div class="team-social text-center">
+                              <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                  <div class="team-item position-relative rounded overflow-hidden">
+                      <div class="overflow-hidden">
+                        <img src="assets/images/team1.jpg" alt="">
+                      </div>
+                      <div class="team-text bg-light text-center p-4">
+                        <a class="nav-link" href="our-doctors.html">                                <h5>Dr. Abdullah Alsuhaibani
+                        </h5></a>
+
+                          <p class="doctor-role">MBBS, FRCPC, DABR, MBA
+                          </p>
+                          <div class="team-social text-center">
+                              <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </section>
+  </div>
+  <!-- Team End -->
+   </section>
     <!--===============================================================
                   End  contact me
  =====================================================================-->

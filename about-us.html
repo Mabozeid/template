@@ -14,7 +14,7 @@
     />
 
     <!-- Main Page Title -->
-    <title>contact</title>
+    <title>about us</title>
     <!-- Google Font -->
     <link
       rel="stylesheet"
@@ -119,164 +119,42 @@
       <!-- Container -->
     </nav>
 
-    <!--===============================================================
-                   Start  contact me
-  =====================================================================-->
-
-    <section class="contact-me" id="contact">
-      <div class="overlay-contact padtobo-100">
-        <!-- Container -->
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-name">
-                <!--section-title-->
-                <h2>
-                  <span class="section-title"
-                    ><span class="first-title">Contact </span>Me</span
-                  >
-                </h2>
+   <!--===============================================================
+                                                          start about me
+     =====================================================================-->
+         <!-- About Start -->
+         <section class="about-us" id="about-us">
+            <div class="container-xxl padtobo-100"">
+              <div class="container">
+                  <div class="row g-5">
+                      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                          <div class="d-flex flex-column">
+                              <img class="img-fluid rounded w-75 align-self-end" src="assets/images/about-1.webP" alt="">
+                              <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="assets/images/about-2.jpg" alt="" style="margin-top: -25%;">
+                          </div>
+                      </div>
+                      <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                          <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
+                          <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
+                          <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                          <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                          <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
+                          <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
+                          <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p>
+  
+                          <button type="submit" class="button-effect">
+                            Read More
+                            <a class="nav-link" href="about-us.html"></a>
+                          </button>
+                  </div>
               </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="single-contact">
-                <div class="contact-label">
-                  <!--contact-data-->
-                  <div class="contact-detail">
-                    <span class="fa fa-map-marked-alt"></span>
-                    <div class="contact-data">
-                      <h5>Address</h5>
-                      <p>661 Lefferts, NY 11203, USA</p>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-phone"></span>
-                    <div class="contact-data">
-                      <h5>Phone</h5>
-                      <p>(+1) 517 397 7100</p>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-envelope"></span>
-                    <div class="contact-data">
-                      <h5>Email</h5>
-                      <p>info@example.com</p>
-                    </div>
-                    <span class="number-big">
-                      <i class="far fa-address-book"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8">
-              <div
-                class="alert alert-success alert-dismissible"
-                id="sendmessage"
-                style="display: none"
-              >
-                <div>
-                  Thank you for your message. I will <br />
-                  get back to you as soon as possible.
-                </div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div
-                class="alert alert-danger alert-dismissible"
-                id="errormessage"
-                style="display: none"
-              >
-                <div>There is a problem in sending mail. Try again.</div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-
-              <div id="sendmail_ajaxLoading"></div>
-              <form
-                id="contact-form"
-                class="contact-info contact-form"
-                action="contact_form.php"
-                method="post"
-              >
-                <!--contact-form-->
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="name"
-                        required=""
-                        type="text"
-                        class="name"
-                        placeholder=" Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="email"
-                        required=""
-                        type="email"
-                        class="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item">
-                      <input
-                        name="subject"
-                        required=""
-                        type="text"
-                        class="name error"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item text-msg">
-                      <textarea
-                        name="message"
-                        required=""
-                        rows="1"
-                        class="message"
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-
-                    <button type="submit" class="button-effect">
-                    <a> </a>
-                      Message Me
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
           </div>
-        </div>
-        <!-- Container -->
-      </div>
-    </section>
-    <!--===============================================================
-                  End  contact me
- =====================================================================-->
+          <!-- About End -->
+           </section>
+  
+      <!--===============================================================
+                                                         End about me
+    =====================================================================-->
 
     <!--====================================================================
                                                                Start Footer

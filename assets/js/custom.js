@@ -8,13 +8,13 @@ $(document).ready(function () {
     navbar = $(".navbar")
 
   /*========== Start Navbar Auto Change  ==========*/
-  // win.on("scroll", function () {
-  //   if (win.scrollTop() > 50) {
-  //     navbar.addClass("scroll").removeClass("fixed-top")
-  //   } else {
-  //     navbar.addClass("fixed-top").removeClass("scroll")
-  //   }
-  // })
+  win.on("scroll", function () {
+    if (win.scrollTop() > 50) {
+      navbar.addClass("scroll").removeClass("fixed-top")
+    } else {
+      navbar.addClass("fixed-top").removeClass("scroll")
+    }
+  })
 
   // Sync Navbar Links With Section
   $("body").scrollspy({
@@ -23,18 +23,18 @@ $(document).ready(function () {
   })
 
   /*========== Start Scroll For Navigation Menu ==========*/
-  // navbar.on("click", "a", function (e) {
-  //   e.preventDefault()
-  //   var $anchor = $(this)
-  //   $("html, body")
-  //     .stop()
-  //     .animate(
-  //       {
-  //         scrollTop: $($anchor.attr("href")).offset().top - 82,
-  //       },
-  //       1000
-  //     )
-  // })
+  navbar.on("click", "a", function (e) {
+    e.preventDefault()
+    var $anchor = $(this)
+    $("html, body")
+      .stop()
+      .animate(
+        {
+          scrollTop: $($anchor.attr("href")).offset().top - 82,
+        },
+        1000
+      )
+  })
 
   //// COLLAPSED MENU CLOSE ON CLICK
   navbar.on("click", ".navbar-collapse", function (e) {

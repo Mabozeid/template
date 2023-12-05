@@ -14,7 +14,7 @@
     />
 
     <!-- Main Page Title -->
-    <title>contact</title>
+    <title>Appointment</title>
     <!-- Google Font -->
     <link
       rel="stylesheet"
@@ -123,157 +123,86 @@
                    Start  contact me
   =====================================================================-->
 
-    <section class="contact-me" id="contact">
-      <div class="overlay-contact padtobo-100">
-        <!-- Container -->
+    <!-- Appointment Start -->
+    <section class="appiontment padtobo-100" id="appiontment">
+      <div class="container-xxl py-5">
         <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-name">
-                <!--section-title-->
-                <h2>
-                  <span class="section-title"
-                    ><span class="first-title">Contact </span>Me</span
-                  >
-                </h2>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="single-contact">
-                <div class="contact-label">
-                  <!--contact-data-->
-                  <div class="contact-detail">
-                    <span class="fa fa-map-marked-alt"></span>
-                    <div class="contact-data">
-                      <h5>Address</h5>
-                      <p>661 Lefferts, NY 11203, USA</p>
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <p class="d-inline-block border rounded-pill py-1 px-4">Appointment</p>
+                    <h1 class="mb-4">Make An Appointment To Visit Our Doctor</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-phone-alt"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Call Us Now</p>
+                            <h5 class="mb-0">+012 345 6789</h5>
+                        </div>
                     </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-phone"></span>
-                    <div class="contact-data">
-                      <h5>Phone</h5>
-                      <p>(+1) 517 397 7100</p>
+                    <div class="bg-light rounded d-flex align-items-center p-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                            <i class="fa fa-envelope-open"></i>
+                        </div>
+                        <div class="ms-4">
+                            <p class="mb-2">Mail Us Now</p>
+                            <h5 class="mb-0">info@example.com</h5>
+                        </div>
                     </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-envelope"></span>
-                    <div class="contact-data">
-                      <h5>Email</h5>
-                      <p>info@example.com</p>
-                    </div>
-                    <span class="number-big">
-                      <i class="far fa-address-book"></i>
-                    </span>
-                  </div>
                 </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8">
-              <div
-                class="alert alert-success alert-dismissible"
-                id="sendmessage"
-                style="display: none"
-              >
-                <div>
-                  Thank you for your message. I will <br />
-                  get back to you as soon as possible.
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0 mb-3" placeholder="Your Name" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="email" class="form-control border-0 mb-3" placeholder="Your Email" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <input type="text" class="form-control border-0 mb-3" placeholder="Your Mobile" style="height: 55px;">
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <select class="form-select border-0" style="height: 55px;">
+                                        <option selected>Choose Doctor</option>
+                                        <option value="1">Doctor 1</option>
+                                        <option value="2">Doctor 2</option>
+                                        <option value="3">Doctor 3</option>
+                                    </select>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="date" id="date" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 mb-3  datetimepicker-input"
+                                            placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="time" id="time" data-target-input="nearest">
+                                        <input type="text"
+                                            class="form-control border-0 mb-3 datetimepicker-input"
+                                            placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control border-0 mb-3 " rows="5" placeholder="Describe your problem"></textarea>
+                                </div>
+                                <div class="col-12">
+                                    <button class="button-effect w-100 py-3"><a class="hyper-link" href="appointment.html">Book Appointment</a>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div
-                class="alert alert-danger alert-dismissible"
-                id="errormessage"
-                style="display: none"
-              >
-                <div>There is a problem in sending mail. Try again.</div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-
-              <div id="sendmail_ajaxLoading"></div>
-              <form
-                id="contact-form"
-                class="contact-info contact-form"
-                action="contact_form.php"
-                method="post"
-              >
-                <!--contact-form-->
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="name"
-                        required=""
-                        type="text"
-                        class="name"
-                        placeholder=" Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="email"
-                        required=""
-                        type="email"
-                        class="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item">
-                      <input
-                        name="subject"
-                        required=""
-                        type="text"
-                        class="name error"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item text-msg">
-                      <textarea
-                        name="message"
-                        required=""
-                        rows="1"
-                        class="message"
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-
-                    <button type="submit" class="button-effect">
-                    <a> </a>
-                      Message Me
-                    </button>
-                  </div>
-                </div>
-              </form>
             </div>
-          </div>
         </div>
-        <!-- Container -->
-      </div>
+    </div>
     </section>
+
+  <!-- Appointment End -->
     <!--===============================================================
                   End  contact me
  =====================================================================-->
