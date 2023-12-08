@@ -26,7 +26,7 @@
     />
 
     <!-- animate Css -->
-    <link rel="stylesheet" href="assets/css/librairies/animate.css" />
+    <link rel="stylesheet" href="assets/css/librairies/animate.min.css" />
 
     <!-- Owl carousel css  -->
     <link rel="stylesheet" href="assets/css/librairies/owl.carousel.min.css" />
@@ -124,28 +124,30 @@
   =====================================================================-->
 
     <!-- Appointment Start -->
-    <section class="appiontment padtobo-100" id="appiontment">
+    <section class="appiontment padtobo-100 wow fadeIn" id="appiontment" data-wow-delay="0.1s">
       <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">Appointment</p>
-                    <h1 class="mb-4">Make An Appointment To Visit Our Doctor</h1>
+                  <div class="section-box">
+                    <p class="d-inline-block border  py-1 px-4 radious-ciryle ">Appointment</p>
+                    <h1 class="mb-4 section-title">Make An Appointment To Visit Our Doctor</h1>
+                  </div>
                     <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4 appiontment-box">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white">
                             <i class="fa fa-phone-alt"></i>
                         </div>
-                        <div class="ms-4">
+                        <div class="ms-4 appiontment-contact">
                             <p class="mb-2">Call Us Now</p>
                             <h5 class="mb-0">+012 345 6789</h5>
                         </div>
                     </div>
-                    <div class="bg-light rounded d-flex align-items-center p-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
+                    <div class="bg-light rounded d-flex align-items-center p-5 appiontment-box">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white">
                             <i class="fa fa-envelope-open"></i>
                         </div>
-                        <div class="ms-4">
+                        <div class="ms-4 appiontment-contact">
                             <p class="mb-2">Mail Us Now</p>
                             <h5 class="mb-0">info@example.com</h5>
                         </div>
@@ -190,7 +192,7 @@
                                     <textarea class="form-control border-0 mb-3 " rows="5" placeholder="Describe your problem"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="button-effect w-100 py-3"><a class="hyper-link" href="appointment.html">Book Appointment</a>
+                                    <button class="button-effect py-3"><a class="hyper-link" href="appointment.html">Book Appointment</a>
                                     </button>
                                 </div>
                             </div>
@@ -201,6 +203,9 @@
         </div>
     </div>
     </section>
+
+  <!-- Appointment End -->
+
 
   <!-- Appointment End -->
     <!--===============================================================
@@ -297,6 +302,7 @@
 
     <script src="assets/js/librairies/owl.carousel.min.js"></script>
 
+    <script src="assets/js/librairies/wow.min.js"></script>
     <!-- My Custom Js  -->
     <script src="assets/js/custom.js"></script>
   </body>

@@ -26,7 +26,7 @@
     />
 
     <!-- animate Css -->
-    <link rel="stylesheet" href="assets/css/librairies/animate.css" />
+    <link rel="stylesheet" href="assets/css/librairies/animate.min.css" />
 
     <!-- Owl carousel css  -->
     <link rel="stylesheet" href="assets/css/librairies/owl.carousel.min.css" />
@@ -44,7 +44,6 @@
 
     <!-- responsive css -->
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <!-- <link rel="stylesheet" href="assets/css/responsive.css" /> -->
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -85,12 +84,11 @@
                 >Radiation therapy</a
               >
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-us">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#our-doctors">Our Doctors</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about-us">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#treatment-mechanism">Treatment mechanism</a>
@@ -129,7 +127,9 @@
           =====================================================================-->
     <header class="header" id="home">
       <div class="full-screen">
-        <video src="assets/images/pexels-tima-miroshnichenko-6010767 (2160p).mp4" autoplay muted loop></video>
+        <video src="assets/images/01.mp4"
+        autoplay="autoplay"
+        autoplay muted loop playsinline></video>
         <!--container-->
         <div class="container">
             <div class="banner-header">
@@ -148,7 +148,8 @@
     <!--===============================================================
                                                          end  header
      =====================================================================-->
-     <section id="radiation-therapye" class=" padtobo-100">
+
+     <section id="radiation-therapye" class=" padtobo-100 radiation-therapye wow fadeIn" data-wow-delay="0.1s">
       <!--container-->
       <div class="container">
         <div class="row">
@@ -162,10 +163,12 @@
             <div class="about-info">
               <div class="about-title">
                 <!--section-title-->
-                <p class="d-inline-block border rounded-pill py-1 px-4">Medicine</p>
-                <h1>
-                  Radiation therapy
-                </h1>
+                <div class="section-box">
+                  <p class="d-inline-block border  py-1 px-4 radious-ciryle">Medicine</p>
+                  <h1 class="section-title">
+                    Radiation therapy
+                  </h1>
+                </div>
               </div>
 
               <div class="row">
@@ -193,121 +196,177 @@
       </div>
     </section>
 
+    <section class="about-us" id="about-us">
+      <!-- About Start -->
+      <div class="container-xxl padtobo-100"">
+       <div class="container">
+           <div class="row g-5">
+               <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="section-box">
+                  <p class="d-inline-block border  py-1 px-4 radious-ciryle">About Us</p>
+                  <h1 class="mb-4 section-title">Why You Should Trust Us? Get Know About Us!</h1>
+                </div>
+                   <div class="d-flex flex-column about-us-img">
+                       <img class="img-fluid  w-75 align-self-end radious-ciryle" src="assets/images/about-1.webP" alt="">
+                       <img class="img-fluid  w-50  pe-3 radious-ciryle" src="assets/images/about-2.jpg" alt="" style="margin-top: -25%;">
+                   </div>
+               </div>
+               <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="section-box">
+                  <p class="d-inline-block border  py-1 px-4 radious-ciryle">About Us</p>
+                  <h1 class="mb-4 section-title">Why You Should Trust Us? Get Know About Us!</h1>
+                </div>
+
+                   <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                   <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                   <p><i class="far fa-check-circle text-primary me-3 pr-2"></i>Quality health care</p>
+                   <p><i class="far fa-check-circle text-primary me-3 pr-2"></i>Only Qualified Doctors</p>
+                   <p><i class="far fa-check-circle text-primary me-3 pr-2"></i>Medical Research Professionals</p>
+
+                   <button type="submit" class="button-effect">
+                     <a class="hyper-link"  href="about-us.html">Read More</a>
+                   </button>
+           </div>
+       </div>
+   </div>
+   <!-- About End -->
+    </section>
+
         <!--===============================================================
                          start   our-doctors
         =====================================================================-->
 
-        <section class="our-doctors" id="our-doctors">
-          <div class="container-xxl padtobo-100"">
-            <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">Doctors</p>
-                    <h1>Our Experience Doctors</h1>
-                </div>
-                <div class="row g-4">
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="team-item position-relative rounded overflow-hidden">
-                            <div class="overflow-hidden">
-                                <img src="assets/images/team1.jpg" alt="">
-                            </div>
-                            <div class="team-text bg-light text-center p-4">
 
-                                <a class="hyper-link" href="our-doctors.html"> 
-                                  <h5>Dr. Yasir Alayed
-                                  </h5>
-                                  </a>
-                                <p class="doctor-role">dental doctor</p>
-                                <div class="team-social text-center">
-                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="team-item position-relative rounded overflow-hidden">
-                            <div class="overflow-hidden">
-                              <img src="assets/images/team1.jpg" alt="">
-                            </div>
-                            <div class="team-text bg-light text-center p-4">
-                              <a class="hyper-link" href="our-doctors.html"> 
-                                <h5>Dr. Hossam Alassaf
-                                </h5>  
-                                </a>
-
-                                
-                                <p class="doctor-role">surgery expert</p>
-                                <div class="team-social text-center">
-                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="team-item position-relative rounded overflow-hidden">
-                            <div class="overflow-hidden">
-                              <img src="assets/images/team1.jpg" alt="">
-                            </div>
-                            <div class="team-text bg-light text-center p-4">
-                                <a class="hyper-link" href="our-doctors.html"> 
-                                  <h5>Dr. Saif Aljabab
-                                  </h5>  
-                                  </a>
-                                <p class="doctor-role">cancer consultant</p>
-                                <div class="team-social text-center">
-                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="team-item position-relative rounded overflow-hidden">
-                            <div class="overflow-hidden">
-                              <img src="assets/images/team1.jpg" alt="">
-                            </div>
-                            <div class="team-text bg-light text-center p-4">
-                              <a class="hyper-link" href="our-doctors.html"> 
-                                <h5>Dr. Abdullah Alsuhaibani
-                                </h5>                         
-                                      </a>
-
-                                <p class="doctor-role">MBBS, FRCPC, DABR, MBA
-                                </p>
-                                <div class="team-social text-center">
-                                    <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
-                                    <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Team End -->
-         </section>
-  
       <!--===============================================================
                                                   End our-doctors
              =====================================================================-->
+    <!--===============================================================
+                                                          start about me
+     =====================================================================-->
+     <section class="our-doctors padtobo-100 wow fadeIn" id="our-doctors" data-wow-delay="0.1s">
+      <!-- Container -->
+      <div class="container">
+        <div class="text-left mx-auto mb-5 style="max-width: 600px;">
+          <div class="section-box">
+            <p class="d-inline-block border  py-1 px-4 radious-ciryle">Doctors</p>
+            <h1 class="section-title">Our Experience Doctors</h1>
+          </div>
+      </div>
+        <div class="row g-4">
+
+          <div class="col-12">
+            <div class="owl-carousel owl-theme owl-loaded" id="partners">
+              <div class="owl-stage-outer">
+                <div class="owl-stage">
+                  <!--partners-logo-->
+                  <div class="owl-item">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                      <div class="overflow-hidden">
+                          <img src="assets/images/team1.png" alt="">
+                      </div>
+                      <div class="team-text bg-light text-center p-4">
+
+                          <a class="hyper-link" href="our-doctors.html"> 
+                            <h5>Dr. Yasir Alayed
+                            </h5>
+                            </a>
+                          <p class="doctor-role">dental doctor</p>
+                          <div class="team-social text-center">
+                              <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                      <div class="overflow-hidden">
+                        <img src="assets/images/team1.png" alt="">
+                      </div>
+                      <div class="team-text bg-light text-center p-4">
+                        <a class="hyper-link" href="our-doctors.html"> 
+                          <h5>Dr. Hossam Alassaf
+                          </h5>  
+                          </a>
+
+                          
+                          <p class="doctor-role">surgery expert</p>
+                          <div class="team-social text-center">
+                              <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                      <div class="overflow-hidden">
+                        <img src="assets/images/team1.png" alt="">
+                      </div>
+                      <div class="team-text bg-light text-center p-4">
+                          <a class="hyper-link" href="our-doctors.html"> 
+                            <h5>Dr. Saif Aljabab
+                            </h5>  
+                            </a>
+                          <p class="doctor-role">cancer consultant</p>
+                          <div class="team-social text-center">
+                              <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                  <div class="owl-item">
+                    <div class="team-item position-relative rounded overflow-hidden">
+                      <div class="overflow-hidden">
+                        <img src="assets/images/team1.png" alt="">
+                      </div>
+                      <div class="team-text bg-light text-center p-4">
+                        <a class="hyper-link" href="our-doctors.html"> 
+                          <h5>Dr. Abdullah Alsuhaibani
+                          </h5>                         
+                                </a>
+
+                          <div class="team-social text-center">
+                              <a class="btn btn-square" href="#"><i class="fab fa-facebook-f"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-twitter"></i></a>
+                              <a class="btn btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                          </div>
+                      </div>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Container -->
+    </section>
+
+    <!--===============================================================
+                                                       End about me
+  =====================================================================-->
+
+
              <!--===============================================================
                          start   Services
         =====================================================================-->
 
-    <section class="treatment-mechanism padtobo-100" id="treatment-mechanism">
+    <section class="treatment-mechanism padtobo-100 wow fadeIn" id="treatment-mechanism" data-wow-delay="0.1s">
       <!-- Container -->
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="section-name">
+            <div class="section-name ">
               <!--section-title-->
-              <p class="d-inline-block border rounded-pill py-1 px-4">process</p>
-                    <h1 class="mb-4">treatment mechanism</h1>
+              <div class="section-box">
+                <p class="d-inline-block border  py-1 px-4 radious-ciryle">process</p>
+                <h1 class="mb-5 section-title">treatment mechanism</h1>
+              </div>         
             </div>
           </div>
 
@@ -323,8 +382,8 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <span class="number-bg">01</span>
-              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3"></i>Read More</a>
+
+              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3 mr-2"></i>Read More</a>
             </div>
           </div>
           <!-- Services Items Column -->
@@ -339,8 +398,8 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <span class="number-bg">02</span>
-              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3"></i>Read More</a>
+
+              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3 mr-2"></i>Read More</a>
             </div>
           </div>
 
@@ -356,8 +415,8 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <span class="number-bg">03</span>
-              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3"></i>Read More</a>
+
+              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3 mr-2"></i>Read More</a>
             </div>
           </div>
           <!-- Services Items Column -->
@@ -372,8 +431,8 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <span class="number-bg">04</span>
-              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3"></i>Read More</a>
+
+              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3 mr-2"></i>Read More</a>
             </div>
           </div>
           <!-- Services Items Column -->
@@ -388,8 +447,8 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <span class="number-bg">05</span>
-              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3"></i>Read More</a>
+
+              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3 mr-2"></i>Read More</a>
             </div>
           </div>
           <!-- Services Items Column -->
@@ -404,8 +463,8 @@
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry.
               </p>
-              <span class="number-bg">06</span>
-              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3"></i>Read More</a>
+
+              <a class="hyper-link" href="treatment-mechanism.html"><i class="fa fa-plus me-3 mr-2"></i>Read More</a>
             </div>
           </div>
         </div>
@@ -416,275 +475,9 @@
                          End  Services
         =====================================================================-->
 
-
-
-    <!-- Appointment Start -->
-    <section class="appiontment padtobo-100" id="appiontment">
-      <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p class="d-inline-block border rounded-pill py-1 px-4">Appointment</p>
-                    <h1 class="mb-4">Make An Appointment To Visit Our Doctor</h1>
-                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                    <div class="bg-light rounded d-flex align-items-center p-5 mb-4">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
-                            <i class="fa fa-phone-alt"></i>
-                        </div>
-                        <div class="ms-4">
-                            <p class="mb-2">Call Us Now</p>
-                            <h5 class="mb-0">+012 345 6789</h5>
-                        </div>
-                    </div>
-                    <div class="bg-light rounded d-flex align-items-center p-5">
-                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center rounded-circle bg-white" style="width: 55px; height: 55px;">
-                            <i class="fa fa-envelope-open"></i>
-                        </div>
-                        <div class="ms-4">
-                            <p class="mb-2">Mail Us Now</p>
-                            <h5 class="mb-0">info@example.com</h5>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="bg-light rounded h-100 d-flex align-items-center p-5">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0 mb-3" placeholder="Your Name" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="email" class="form-control border-0 mb-3" placeholder="Your Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <input type="text" class="form-control border-0 mb-3" placeholder="Your Mobile" style="height: 55px;">
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <select class="form-select border-0" style="height: 55px;">
-                                        <option selected>Choose Doctor</option>
-                                        <option value="1">Doctor 1</option>
-                                        <option value="2">Doctor 2</option>
-                                        <option value="3">Doctor 3</option>
-                                    </select>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="date" id="date" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 mb-3  datetimepicker-input"
-                                            placeholder="Choose Date" data-target="#date" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12 col-sm-6">
-                                    <div class="time" id="time" data-target-input="nearest">
-                                        <input type="text"
-                                            class="form-control border-0 mb-3 datetimepicker-input"
-                                            placeholder="Choose Date" data-target="#time" data-toggle="datetimepicker" style="height: 55px;">
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control border-0 mb-3 " rows="5" placeholder="Describe your problem"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="button-effect w-100 py-3"><a class="hyper-link" href="appointment.html">Book Appointment</a>
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    </section>
-
-  <!-- Appointment End -->
-    <!--===============================================================
-                                                          start about me
-     =====================================================================-->
-         <!-- About Start -->
-          <div class="container-xxl padtobo-100"">
-            <div class="container">
-                <div class="row g-5">
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
-                        <div class="d-flex flex-column">
-                            <img class="img-fluid rounded w-75 align-self-end" src="assets/images/about-1.webP" alt="">
-                            <img class="img-fluid rounded w-50 bg-white pt-3 pe-3" src="assets/images/about-2.jpg" alt="" style="margin-top: -25%;">
-                        </div>
-                    </div>
-                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <p class="d-inline-block border rounded-pill py-1 px-4">About Us</p>
-                        <h1 class="mb-4">Why You Should Trust Us? Get Know About Us!</h1>
-                        <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
-                        <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                        <p><i class="far fa-check-circle text-primary me-3"></i>Quality health care</p>
-                        <p><i class="far fa-check-circle text-primary me-3"></i>Only Qualified Doctors</p>
-                        <p><i class="far fa-check-circle text-primary me-3"></i>Medical Research Professionals</p>
-
-                        <button type="submit" class="button-effect">
-                          <a class="hyper-link"  href="about-us.html">Read More</a>
-                        </button>
-                </div>
-            </div>
-        </div>
-        <!-- About End -->
-         </section>
-
-    <!--===============================================================
-                                                       End about me
-  =====================================================================-->
-
-
     <!--===============================================================
                    Start  contact me
   =====================================================================-->
-
-    <section class="contact-me" id="contact">
-      <div class="overlay-contact padtobo-100">
-        <!-- Container -->
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-name">
-                <!--section-title-->
-                <p class="d-inline-block border rounded-pill py-1 px-4">message</p>
-                <h1 class="mb-4">contact us</h1>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="single-contact">
-                <div class="contact-label">
-                  <!--contact-data-->
-                  <div class="contact-detail">
-                    <span class="fa fa-map-marked-alt"></span>
-                    <div class="contact-data">
-                      <h5>Address</h5>
-                      <p>661 Lefferts, NY 11203, USA</p>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-phone"></span>
-                    <div class="contact-data">
-                      <h5>Phone</h5>
-                      <p>(+1) 517 397 7100</p>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-envelope"></span>
-                    <div class="contact-data">
-                      <h5>Email</h5>
-                      <p>info@example.com</p>
-                    </div>
-                    <span class="number-big">
-                      <i class="far fa-address-book"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8">
-              <div
-                class="alert alert-success alert-dismissible"
-                id="sendmessage"
-                style="display: none"
-              >
-                <div>
-                  Thank you for your message. I will <br />
-                  get back to you as soon as possible.
-                </div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div
-                class="alert alert-danger alert-dismissible"
-                id="errormessage"
-                style="display: none"
-              >
-                <div>There is a problem in sending mail. Try again.</div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-
-              <div id="sendmail_ajaxLoading"></div>
-              <form
-                id="contact-form"
-                class="contact-info contact-form"
-                action="contact_form.php"
-                method="post"
-              >
-                <!--contact-form-->
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="name"
-                        required=""
-                        type="text"
-                        class="name"
-                        placeholder=" Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="email"
-                        required=""
-                        type="email"
-                        class="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item">
-                      <input
-                        name="subject"
-                        required=""
-                        type="text"
-                        class="name error"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item text-msg">
-                      <textarea
-                        name="message"
-                        required=""
-                        rows="1"
-                        class="message"
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-
-                    <button type="submit" class="button-effect">
-                      <a class="hyper-link" href="contact.html">Message Me</a>
-                    </button>
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <!-- Container -->
-      </div>
-    </section>
     <!--===============================================================
                   End  contact me
  =====================================================================-->
@@ -693,40 +486,34 @@
                                                                Start Footer
                =====================================================================-->
 <!-- Footer Start -->
-<section class="footer-main">
+<section class="footer-main wow fadeIn" data-wow-delay="0.1s">
   <div class="container-fluid text-light footer pt-2">
-    <div class="container py-5">
+    <div class="container">
         <div class="row g-5">
-          <div class="col-lg-3 col-md-6">
-            <img class="footer-logo" src="assets/images/BATIK-X LOGO FINAL.png" alt="About-me">
-        </div>
-  
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Address</h5>
-                <p class="mb-2 contact-footer"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                <p class="mb-2 contact-footer"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                <p class="mb-2 contact-footer"><i class="fa fa-envelope me-3"></i>info@example.com</p>
-                <div class="d-flex pt-2">
-                    <a class="btn btn-outline-light btn-social rounded-circle" href="#"><i class="fab fa-twitter"></i></a>
-                    <a class="btn btn-outline-light btn-social rounded-circle" href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a class="btn btn-outline-light btn-social rounded-circle" href="#"><i class="fab fa-youtube"></i></a>
-                    <a class="btn btn-outline-light btn-social rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
-                </div>
+          <div class="col-md-6 ">
+            <div class="footer-logo-box text-right">
+              <img class="footer-logo mb-2" src="assets/images/BATIK-X LOGO FINAL.png" alt="About-me">
             </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Services</h5>
-                <a class="btn" href="#">Cardiology</a>
-                <a class="btn" href="#">Pulmonary</a>
-                <a class="btn" href="#">Neurology</a>
+            
+           </div>
   
+            <div class="col-md-6">
+              <div class="footer-contact-box">
+                <p class="mb-2 contact-footer"><i class="fa fa-map-marker-alt me-3 pr-2"></i>123 Street, New York, USA</p>
+                <p class="mb-2 contact-footer"><i class="fa fa-phone-alt me-3 pr-2"></i>+012 345 67890</p>
+                <p class="mb-2 contact-footer"><i class="fa fa-envelope me-3 pr-2"></i>info@example.com</p>
+              </div>
+
             </div>
-            <div class="col-lg-3 col-md-6">
-                <h5 class="text-light mb-4">Quick Links</h5>
-                <a class="btn" href="#">About Us</a>
-                <a class="btn" href="#">Contact Us</a>
-                <a class="btn" href="#">Our Services</a>
-            </div>
-  
+            <div class="col-12">
+              <div class="pt-4 social-footer">
+                <a class="btn btn-outline-light btn-social rounded-circle" href="#"><i class="fab fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-social rounded-circle" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social rounded-circle" href="#"><i class="fab fa-youtube"></i></a>
+                <a class="btn btn-outline-light btn-social rounded-circle" href="#"><i class="fab fa-linkedin-in"></i></a>
+                <p class="text-light mb-4 mt-3">All rights reserved © 2023</p>
+            </div>         
+             </div>
         </div>
     </div>
   </div>
@@ -776,6 +563,7 @@
 
     <script src="assets/js/librairies/owl.carousel.min.js"></script>
 
+    <script src="assets/js/librairies/wow.min.js"></script>
     <!-- My Custom Js  -->
     <script src="assets/js/custom.js"></script>
   </body>

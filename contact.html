@@ -26,7 +26,7 @@
     />
 
     <!-- animate Css -->
-    <link rel="stylesheet" href="assets/css/librairies/animate.css" />
+    <link rel="stylesheet" href="assets/css/librairies/animate.min.css" />
 
     <!-- Owl carousel css  -->
     <link rel="stylesheet" href="assets/css/librairies/owl.carousel.min.css" />
@@ -123,157 +123,155 @@
                    Start  contact me
   =====================================================================-->
 
-    <section class="contact-me" id="contact">
-      <div class="overlay-contact padtobo-100">
-        <!-- Container -->
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="section-name">
-                <!--section-title-->
-                <h2>
-                  <span class="section-title"
-                    ><span class="first-title">Contact </span>Me</span
-                  >
-                </h2>
+  <section class="contact-me wow fadeIn" id="contact" data-wow-delay="0.1s">
+    <div class="overlay-contact padtobo-100">
+      <!-- Container -->
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-name">
+              <!--section-title-->
+              <div class="section-box">
+                <p class="d-inline-block border  py-1 px-4 radious-ciryle">message</p>
+                <h1 class="mb-4 section-title">contact us</h1>
               </div>
-            </div>
-
-            <div class="col-lg-4">
-              <div class="single-contact">
-                <div class="contact-label">
-                  <!--contact-data-->
-                  <div class="contact-detail">
-                    <span class="fa fa-map-marked-alt"></span>
-                    <div class="contact-data">
-                      <h5>Address</h5>
-                      <p>661 Lefferts, NY 11203, USA</p>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-phone"></span>
-                    <div class="contact-data">
-                      <h5>Phone</h5>
-                      <p>(+1) 517 397 7100</p>
-                    </div>
-                  </div>
-
-                  <div class="contact-detail">
-                    <span class="fa fa-envelope"></span>
-                    <div class="contact-data">
-                      <h5>Email</h5>
-                      <p>info@example.com</p>
-                    </div>
-                    <span class="number-big">
-                      <i class="far fa-address-book"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-8">
-              <div
-                class="alert alert-success alert-dismissible"
-                id="sendmessage"
-                style="display: none"
-              >
-                <div>
-                  Thank you for your message. I will <br />
-                  get back to you as soon as possible.
-                </div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-              <div
-                class="alert alert-danger alert-dismissible"
-                id="errormessage"
-                style="display: none"
-              >
-                <div>There is a problem in sending mail. Try again.</div>
-                <button
-                  type="button"
-                  class="close"
-                  aria-label="Close"
-                  data-dismiss="alert"
-                >
-                  <span aria-hidden="true">×</span>
-                </button>
-              </div>
-
-              <div id="sendmail_ajaxLoading"></div>
-              <form
-                id="contact-form"
-                class="contact-info contact-form"
-                action="contact_form.php"
-                method="post"
-              >
-                <!--contact-form-->
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="name"
-                        required=""
-                        type="text"
-                        class="name"
-                        placeholder=" Name"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="form-item">
-                      <input
-                        name="email"
-                        required=""
-                        type="email"
-                        class="email"
-                        placeholder="Email"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item">
-                      <input
-                        name="subject"
-                        required=""
-                        type="text"
-                        class="name error"
-                        placeholder="Subject"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-item text-msg">
-                      <textarea
-                        name="message"
-                        required=""
-                        rows="1"
-                        class="message"
-                        placeholder="Message"
-                      ></textarea>
-                    </div>
-
-                    <button type="submit" class="button-effect">
-                    <a> </a>
-                      Message Me
-                    </button>
-                  </div>
-                </div>
-              </form>
             </div>
           </div>
+
+          <div class="col-lg-4">
+            <div class="single-contact">
+              <div class="contact-label">
+                <!--contact-data-->
+                <div class="contact-detail">
+                  <span class="fa fa-map-marked-alt"></span>
+                  <div class="contact-data">
+                    <h5>Address</h5>
+                    <p>661 Lefferts, NY 11203, USA</p>
+                  </div>
+                </div>
+
+                <div class="contact-detail">
+                  <span class="fa fa-phone"></span>
+                  <div class="contact-data">
+                    <h5>Phone</h5>
+                    <p>(+1) 517 397 7100</p>
+                  </div>
+                </div>
+
+                <div class="contact-detail">
+                  <span class="fa fa-envelope"></span>
+                  <div class="contact-data">
+                    <h5>Email</h5>
+                    <p>info@example.com</p>
+                  </div>
+                  <span class="number-big">
+                    <i class="far fa-address-book"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8">
+            <div
+              class="alert alert-success alert-dismissible"
+              id="sendmessage"
+              style="display: none"
+            >
+              <div>
+                Thank you for your message. I will <br />
+                get back to you as soon as possible.
+              </div>
+              <button
+                type="button"
+                class="close"
+                aria-label="Close"
+                data-dismiss="alert"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+            <div
+              class="alert alert-danger alert-dismissible"
+              id="errormessage"
+              style="display: none"
+            >
+              <div>There is a problem in sending mail. Try again.</div>
+              <button
+                type="button"
+                class="close"
+                aria-label="Close"
+                data-dismiss="alert"
+              >
+                <span aria-hidden="true">×</span>
+              </button>
+            </div>
+
+            <div id="sendmail_ajaxLoading"></div>
+            <form
+              id="contact-form"
+              class="contact-info contact-form"
+              action="contact_form.php"
+              method="post"
+            >
+              <!--contact-form-->
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-item">
+                    <input
+                      name="name"
+                      required=""
+                      type="text"
+                      class="name"
+                      placeholder=" Name"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-item">
+                    <input
+                      name="email"
+                      required=""
+                      type="email"
+                      class="email"
+                      placeholder="Email"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-item">
+                    <input
+                      name="subject"
+                      required=""
+                      type="text"
+                      class="name error"
+                      placeholder="Subject"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-item text-msg">
+                    <textarea
+                      name="message"
+                      required=""
+                      rows="1"
+                      class="message"
+                      placeholder="Message"
+                    ></textarea>
+                  </div>
+
+                  <button type="submit" class="button-effect">
+                    <a class="hyper-link" href="contact.html">Message Me</a>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
-        <!-- Container -->
       </div>
-    </section>
+      <!-- Container -->
+    </div>
+  </section>
     <!--===============================================================
                   End  contact me
  =====================================================================-->
@@ -368,6 +366,7 @@
 
     <script src="assets/js/librairies/owl.carousel.min.js"></script>
 
+    <script src="assets/js/librairies/wow.min.js"></script>
     <!-- My Custom Js  -->
     <script src="assets/js/custom.js"></script>
   </body>

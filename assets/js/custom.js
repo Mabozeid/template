@@ -7,6 +7,9 @@ $(document).ready(function () {
   var win = $(window),
     navbar = $(".navbar")
 
+  // Initiate the wowjs
+  new WOW().init();
+
   /*========== Start Navbar Auto Change  ==========*/
   win.on("scroll", function () {
     if (win.scrollTop() > 50) {
@@ -46,45 +49,26 @@ $(document).ready(function () {
 
   // start owl-carousel
   $(document).ready(function () {
-    $("#partners,#testimonial-carousel").owlCarousel()
+    $("#partners").owlCarousel()
   })
   $("#partners").owlCarousel({
-    loop: true,
-    merge: true,
-    margin: 30,
-    smartSpeed: 1000,
-    autoplay: 2000,
-    dots: false,
-    responsive: {
-      0: {
-        items: 2,
-      },
-      768: {
-        items: 3,
-      },
-      1000: {
-        items: 5,
-      },
-    },
-  })
+    stagePadding: 50,
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:2
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
 
-  $("#testimonial-carousel").owlCarousel({
-    animateOut: "fadeOut",
-    animateIn: "flipInX",
-    stagePadding: 30,
-    smartSpeed: 450,
-    loop: true,
-    nav: true,
-    navText: [
-      "<i class='fas fa-angle-left'></i>",
-      "<i class='fas fa-angle-right'></i>",
-    ],
-    items: 1,
-    margin: 10,
-    autoplay: false,
-    dots: false,
-    merge: true,
-  })
 })
 
 
@@ -94,22 +78,6 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   "use strict"
-
-  // start animated Progress bar //
-
-  function animateProgressBar() {
-    $(".skills-bar .skills .gragh").each(function () {
-      var percent = $(this).data("percent")
-      $(this).css(
-        {
-          height: percent + "%",
-        },
-        function () {
-          $(".percent").fadeIn(3000)
-        }
-      )
-    })
-  }
 
   $(window).on("scroll", function () {
     if ($(window).scrollTop() > $(".about").offset().top + 200) {

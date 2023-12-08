@@ -1,6 +1,6 @@
 /*-----------------------------------------------------------------
 Responsive  Style Stylesheet
-Template Name  : mory - Personal Portfolio HTML Template
+Template Name  : batikx
 Author         : M.abozeid
 Version        : 1.0
 Primary Use    : Personal, Porfolio
@@ -14,13 +14,22 @@ Primary Use    : Personal, Porfolio
 .scroll {
   height: auto;
 } 
+/* .scroll,
+.fixed-top {
+  background-color: #FFF;
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  margin: 0;
+} */
 
-  .fixed-top .navbar-brand {
+  .fixed-top .navbar-brand,
+  .scroll .navbar-brand
+   {
     color: #82B7A5 !important;
+    padding-left: 15px ;
   }
-  .fixed-top .navbar-brand {
-    color: #82B7A5 !important;
-}
+
 .fixed-top .navbar-brand .brand-bg {
     background: #82B7A5;
 }
@@ -78,9 +87,9 @@ Primary Use    : Personal, Porfolio
       margin: 20px 0 10px;
     }
 
-.header p,
-.header-sketch p {
-  max-width: 350px;
+.header .info-banner p{
+  /* max-width: 350px; */
+  display: none;
 }
 
 .header{
@@ -88,22 +97,63 @@ Primary Use    : Personal, Porfolio
   background-size: cover;
   background-position: 50% 50%;
 }
+.about-us .section-box{
+padding-top: 70px;
+}
+.navbar-collapse {
+  text-align: center;
+  margin: 20px;
+}
 
-  .about-img{
-    margin-right: 0;
-    margin-left: 0;
-    border: none;
-    margin-bottom: 20px;
+  .appiontment-box{
+    padding: 0 !important;
+    margin: 20px;
   }
+.appiontment-box .bg-white{
+  padding: 10px !important;
+  width: 35px;
+  height: 35px;
+}
+
+.appiontment-contact p,
+.appiontment-contact h5 {
+  font-size: 16px;
+  padding-left: 10px;
+  margin: 10px;
+}
+.appiontment-contact {
+
+}
+.section-box p {
+  margin-left: 10px;
+  padding: 7px 9px !important;
+}
+.section-title {
+  font-size: 18px;
+}
+
+.services-item{
+  margin: 10px;
+}
+.appiontment  .hyper-link {
+  font-size: 9px;
+}
+.radiation-therapye {
+padding: 50px 0 70px 0!important
+}
+.about-us-img {
+padding: 20px;
+}
+
   .about-img img{
-    margin: 0;
-    padding: 0;
+    margin: 0 20px;
     border: none;
-    border-radius: 0;
     margin-bottom: 0;
+    height: 450px;
   }
   .about-info{
-    margin: auto;
+    margin: 70px auto;
+    margin-bottom: 50px;
   }
   .box-img{
     padding: 0;
@@ -125,12 +175,27 @@ Primary Use    : Personal, Porfolio
     right: 7px;
   }
 
+  .form-select{
+    margin-bottom: 20px;
+  }
   .single-contact{
+    margin: 15px;
     margin-bottom: 30px;
   }
   .form-item + .button-effect{
     margin-bottom: 20px;
-    width: 100%;
+  }
+  .contact-form {
+    margin: 15px;
+  }
+  .single-contact .fa-phone, 
+  .single-contact .fa-map-marked-alt, 
+  .single-contact .fa-envelope {
+   
+    font-size: 18px;
+    padding: 5px;
+    height: 30px;
+    margin-top: 5px;
   }
 
   footer li{
@@ -138,6 +203,13 @@ Primary Use    : Personal, Porfolio
     margin-left: 3px;
   }
 
+  .footer-logo-box  {
+    text-align: center !important;
+  }
+.footer-contact-box {
+  text-align: center !important;
+  margin: 20px auto;
+}
     }
 
     
@@ -150,12 +222,17 @@ Primary Use    : Personal, Porfolio
       height: auto;
     }
 
-      .fixed-top .navbar-brand {
+      .fixed-top .navbar-brand,
+      .scroll .navbar-brand
+      {
         color: #82B7A5 !important;
+        padding-left: 15px ;
       }
-      .fixed-top .navbar-brand {
-        color: #82B7A5 !important;
+
+    .fixed-top .navbar-brand .brand-bg {
+        background: #82B7A5;
     }
+
     .fixed-top .navbar-brand .brand-bg {
         background: #82B7A5;
     }
@@ -210,22 +287,105 @@ Primary Use    : Personal, Porfolio
       .myname{
         font-size: 60px;
       }
-      
+
+      .header .info-banner p{
+        display: none;
+      }
+
+      .about-us .section-box{
+        padding-top: 70px;
+        }
+        .collapse show {
+          text-align: center;
+          margin: 20px;
+        }
+        
+          .appiontment-box{
+            padding: 0 !important;
+            margin: 20px;
+          }
+        .appiontment-box .bg-white{
+          padding: 10px !important;
+          width: 35px;
+          height: 35px;
+        }
+        
+        .appiontment-contact p,
+        .appiontment-contact h5 {
+          font-size: 16px;
+          padding-left: 10px;
+          margin: 10px;
+        }
+        .appiontment-contact {
+        
+        }
+        .section-box p {
+          margin-left: 10px;
+          padding: 7px 9px !important;
+        }
+        .section-title {
+          font-size: 18px;
+        }
+        
+        .services-item{
+          margin: 10px;
+        }
+        .appiontment  .hyper-link {
+          font-size: 9px;
+        }
+        .radiation-therapye {
+        padding: 50px 0 70px 0!important
+        }
+
       .about-img {
         margin: 0 0 50px 50px;
       }
       .scroll {
         height: auto;
       }
+
+      .footer-logo-box  {
+        text-align: center !important;
+      }
+    .footer-contact-box {
+      text-align: center !important;
+      margin: 20px auto;
+    }
+    .form-item.button-effect{
+      margin-bottom: 20px;
+    }
+    .form-item + .button-effect {
+      margin-bottom: 20px;
+     }
+
+    .contact-form {
+      margin: 15px;
+    }
+    .single-contact .fa-phone, 
+    .single-contact .fa-map-marked-alt, 
+    .single-contact .fa-envelope {
+     
+      font-size: 18px;
+      padding: 5px;
+      height: 30px;
+      margin-top: 5px;
+    }
+  
+    footer li{
+      margin-right: 3px;
+      margin-left: 3px;
+    }
+  
+    .footer-logo-box  {
+      text-align: center !important;
+    }
+  .footer-contact-box {
+    text-align: center !important;
+    margin: 20px auto;
+  }
       }
 
-      .form-item.button-effect{
-        margin-bottom: 20px;
-      }
-      .form-item + .button-effect {
-        margin-bottom: 20px;
-        width: 100%;
-       }
+
 
     
     
@@ -240,12 +400,17 @@ Primary Use    : Personal, Porfolio
     .navbar-light  .social-media-nav li .fab{
       color: #444;
     }
-      .fixed-top .navbar-brand {
-        color: #82B7A5 !important;
-      }
-      .fixed-top .navbar-brand {
-        color: #82B7A5 !important;
+
+    .fixed-top .navbar-brand,
+    .scroll .navbar-brand
+     {
+      color: #82B7A5 !important;
+      padding-left: 15px ;
     }
+  
+  .fixed-top .navbar-brand .brand-bg {
+      background: #82B7A5;
+  }
     .fixed-top .navbar-brand .brand-bg {
         background: #82B7A5;
     }
@@ -293,13 +458,23 @@ Primary Use    : Personal, Porfolio
       padding: 20px 10px 20px  0;
     }
 
+    .header .info-banner p{
+      display: none;
+    }
+    
       .myname{
         font-size: 65px;
       }
       .about-img {
         margin: 0 0 50px 50px;
       }
-
+      .footer-logo-box  {
+        text-align: center !important;
+      }
+    .footer-contact-box {
+      text-align: center !important;
+      margin: 20px auto;
+    }
     }
     
     @media (min-width: 992px) and (max-width: 1199.98px) { 
@@ -312,7 +487,7 @@ Primary Use    : Personal, Porfolio
       .about-img {
         margin-right: 40px;
       }
-      .about-info .about-title h3{
+      .about-info .about-title h1{
         font-size: 25px;
         line-height: 1;
         padding: 7px 0 10px;
