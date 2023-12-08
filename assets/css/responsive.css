@@ -14,15 +14,20 @@ Primary Use    : Personal, Porfolio
 .scroll {
   height: auto;
 } 
-/* .scroll,
-.fixed-top {
-  background-color: #FFF;
-  height: 100%;
-  width: 100%;
-  border-radius: 0;
-  margin: 0;
-} */
+.radiation-mobile{
+  display: block;
+}
+.radiation-title{
+  display: none;
+}
 
+.padtobo-100 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.contact-footer {
+  font-size: 14px;
+}
   .fixed-top .navbar-brand,
   .scroll .navbar-brand
    {
@@ -104,7 +109,9 @@ padding-top: 70px;
   text-align: center;
   margin: 20px;
 }
-
+.about-info {
+  height: auto;
+}
   .appiontment-box{
     padding: 0 !important;
     margin: 20px;
@@ -222,6 +229,17 @@ padding: 20px;
       height: auto;
     }
 
+    .radiation-mobile{
+      display: block;
+    }
+    .radiation-title{
+      display: none;
+    }
+    .padtobo-100 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+    
       .fixed-top .navbar-brand,
       .scroll .navbar-brand
       {
@@ -292,6 +310,9 @@ padding: 20px;
         display: none;
       }
 
+      .about-info {
+        height: auto;
+      }
       .about-us .section-box{
         padding-top: 70px;
         }
@@ -338,7 +359,7 @@ padding: 20px;
         }
 
       .about-img {
-        margin: 0 0 50px 50px;
+        margin: 0 0 0 50px;
       }
       .scroll {
         height: auto;

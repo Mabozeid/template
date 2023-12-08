@@ -26,8 +26,7 @@ $(document).ready(function () {
   })
 
   /*========== Start Scroll For Navigation Menu ==========*/
-  navbar.on("click", "a", function (e) {
-    e.preventDefault()
+  navbar.on("click", "a", function() {
     var $anchor = $(this)
     $("html, body")
       .stop()
@@ -70,28 +69,6 @@ $(document).ready(function () {
 })
 
 })
-
-
-/*-----------  strat Progress Bar  js  ---------*/
-
-// start animated Progress bar //
-
-$(document).ready(function () {
-  "use strict"
-
-  $(window).on("scroll", function () {
-    if ($(window).scrollTop() > $(".about").offset().top + 200) {
-      animateProgressBar()
-    }
-  })
-  if ($(window).scrollTop() > $(".about").offset().top + 200) {
-    animateProgressBar()
-  }
-})
-// end animated progress  bar //
-
-/*-----------  End Progress Bar  js  ---------*/
-
 
 
 /*-----------  strat Pre-loader  ---------*/
